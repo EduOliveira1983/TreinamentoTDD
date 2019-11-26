@@ -12,3 +12,17 @@ C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.AssemblyInfo.cs
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.dll
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.deps.json
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.runtimeconfig.json
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.runtimeconfig.dev.json
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.csprojAssemblyReference.cache
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.csproj.CoreCompileInputs.cache
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.AssemblyInfoInputs.cache
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.AssemblyInfo.cs
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.pdb
