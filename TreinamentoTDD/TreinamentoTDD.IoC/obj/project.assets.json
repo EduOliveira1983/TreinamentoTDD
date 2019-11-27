@@ -3674,23 +3674,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduar\\.nuget\\packages\\": {},
+    "C:\\Users\\TTC1776\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj",
+      "projectUniqueName": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj",
       "projectName": "TreinamentoTDD.IoC",
-      "projectPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj",
-      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\obj\\",
+      "projectPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj",
+      "packagesPath": "C:\\Users\\TTC1776\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TTC1776\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3703,11 +3703,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dados\\TreinamentoTDD.Dados.csproj": {
-              "projectPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dados\\TreinamentoTDD.Dados.csproj"
+            "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dados\\TreinamentoTDD.Dados.csproj": {
+              "projectPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dados\\TreinamentoTDD.Dados.csproj"
             },
-            "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj": {
-              "projectPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj"
+            "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj": {
+              "projectPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj"
             }
           }
         }

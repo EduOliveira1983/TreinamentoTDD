@@ -27,11 +27,11 @@ namespace TreinamentoTDD.Web.Controllers
 
         public IActionResult Novo()
         {
-            return View("NovoOuEditar", new CursoDTO());
+            return View("Novo", new CursoDTO());
         }
 
         [HttpPost]
-        public IActionResult Salvar(CursoDTO model)
+        public IActionResult Novo(CursoDTO model)
         {
             _armazenadorCurso.Armazenar(model);
             return Ok();

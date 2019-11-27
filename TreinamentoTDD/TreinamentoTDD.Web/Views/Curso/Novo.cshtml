@@ -1,0 +1,58 @@
+﻿@model TreinamentoTDD.Dominio.DTO.CursoDTO
+
+@{
+    ViewData["Title"] = "Novo";
+}
+
+<h2>Novo</h2>
+
+<h4>CursoDTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Novo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nome" class="control-label"></label>
+                <input asp-for="nome" class="form-control" />
+                <span asp-validation-for="nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descricao" class="control-label"></label>
+                <input asp-for="descricao" class="form-control" />
+                <span asp-validation-for="descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cargaHoraria" class="control-label"></label>
+                <input asp-for="cargaHoraria" class="form-control" />
+                <span asp-validation-for="cargaHoraria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="publicoAlvo" class="control-label"></label>
+                <input asp-for="publicoAlvo" class="form-control" />
+                <span asp-validation-for="publicoAlvo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="valor" class="control-label"></label>
+                <input asp-for="valor" class="form-control" />
+                <span asp-validation-for="valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

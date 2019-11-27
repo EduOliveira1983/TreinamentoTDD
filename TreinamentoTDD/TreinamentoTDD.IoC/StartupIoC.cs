@@ -13,10 +13,11 @@ namespace TreinamentoTDD.IoC
         public static void ConfigurationServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration["DefaultConnection"]));
+                options.UseSqlServer(configuration["Data:ConnectionStrings:DefaultConnection"]));
 
             services.AddScoped(typeof(IRepositorio<>), typeof(RepositorioBase<>));
             services.AddScoped(typeof(ICursoRepositorio), typeof(CursoRepositorio));
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
 
             services.AddScoped<ArmazenadorCurso>();
 

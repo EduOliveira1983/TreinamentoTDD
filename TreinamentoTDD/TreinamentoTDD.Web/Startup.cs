@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TreinamentoTDD.Dominio.Interface;
 using TreinamentoTDD.IoC;
 
 namespace TreinamentoTDD.Web
@@ -18,7 +19,7 @@ namespace TreinamentoTDD.Web
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-             var connStr = Configuration.GetConnectionString("DefaultConnection");
+             
         }
 
         public IConfiguration Configuration { get; }
@@ -26,8 +27,6 @@ namespace TreinamentoTDD.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
-
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -43,6 +42,16 @@ namespace TreinamentoTDD.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.Use(async(context, next) =>
+            {
+                await next.Invoke();
+
+                var unitOfWork = (IUnitOfWork)context.RequestServices.GetService(typeof(IUnitOfWork));
+                await unitOfWork.Commit();
+            });
+
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

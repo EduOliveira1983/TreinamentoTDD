@@ -19,7 +19,7 @@ namespace StoreOfBuild.Data.Contexts
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.Development.json");
             var configuration = builderConfiguration.Build();
-            var connectionString = configuration.GetConnectionString("ConnectionString");
+            var connectionString = configuration["Data:ConnectionStrings:DefaultConnection"];
 
             var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
             builder.UseSqlServer(connectionString);

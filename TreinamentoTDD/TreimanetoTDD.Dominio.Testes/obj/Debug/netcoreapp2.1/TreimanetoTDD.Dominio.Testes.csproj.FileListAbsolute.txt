@@ -29,3 +29,6 @@ C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Domini
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.dll
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.pdb
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.csproj.CopyComplete
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreimanetoTDD.Dominio.Testes\obj\Debug\netcoreapp2.1\TreimanetoTDD.Dominio.Testes.csproj.CopyComplete

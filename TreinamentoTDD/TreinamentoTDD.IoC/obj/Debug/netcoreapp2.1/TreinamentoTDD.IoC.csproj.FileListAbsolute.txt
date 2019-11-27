@@ -12,3 +12,17 @@ C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.csproj.CopyComplete
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.dll
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.IoC.deps.json
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.IoC.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.IoC.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dados.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dados.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.pdb
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.csprojAssemblyReference.cache
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.csproj.CoreCompileInputs.cache
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.AssemblyInfoInputs.cache
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.AssemblyInfo.cs
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.csproj.CopyComplete
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.dll
+C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.IoC\obj\Debug\netcoreapp2.1\TreinamentoTDD.IoC.pdb
