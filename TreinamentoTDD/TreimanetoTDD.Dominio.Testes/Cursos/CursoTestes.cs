@@ -2,12 +2,14 @@
 using System;
 using TreimanetoTDD.Dominio.Testes._Util;
 using TreimanetoTDD.Dominio.Testes.Builders;
+using TreinamentoTDD.Dominio.Cursos;
 using Xunit;
+using static TreinamentoTDD.Dominio.Enums.Enums;
 
 namespace TreimanetoTDD.Dominio.Testes.Cursos
 {
     public class CursoTestes
-    {   
+    {
         [Fact]
         public void DeveCriarCurso()
         {
@@ -24,7 +26,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
                                   cursoEsperado.CargaHoraria,
                                   cursoEsperado.PublicoAlvo,
                                   cursoEsperado.Valor,
-                                  cursoEsperado.Descricao );
+                                  cursoEsperado.Descricao);
 
             cursoEsperado.ToExpectedObject().ShouldMatch(curso);
         }
@@ -34,7 +36,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         [InlineData("")]
         [InlineData(null)]
         public void NaoDeveCursoTerUmNomeInvalido(string nome)
-        { 
+        {
             Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComNome(nome).Build())
                 .ComMensagem("Nome Inválido");
         }
@@ -43,7 +45,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         [InlineData(0)]
         [InlineData(-1)]
         public void NaoDeveCurtoTerCargaHorariaMenorqueHum(int cargaHoraria)
-        {           
+        {
             Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComCargaHoraria(cargaHoraria).Build())
                 .ComMensagem("Carga Horária Inválida");
         }
@@ -56,53 +58,22 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
                 .ComMensagem("Valor Inválido");
         }
 
-        [Fact]
-        public void NaoDeveCursoTerDescricaoInvalida()
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        public void NaoDeveCursoTerDescricaoInvalida(string descricao)
         {
-            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComDescricao(null).Build())
+            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComDescricao(descricao).Build())
                .ComMensagem("Descrição Inválida");
         }
-    }
-        
 
-    public enum PublicoAlvo
-    {
-        Estudante,
-        Universitario,
-        Empregado,
-        Empreendedor
-    }
-
-    public class Curso
-    {
-        public Curso(string nome, int cargaHoraria, PublicoAlvo publicoAlvo, decimal valor, string descricao)
+        [Fact]
+        public void NaoDeveCursoTerPublicoAlvoInvalido()
         {
-            if (string.IsNullOrEmpty(nome))
-                throw new ArgumentException("Nome Inválido");
-
-            if (string.IsNullOrEmpty(descricao))
-                throw new ArgumentException("Descrição Inválida");
-
-            if (cargaHoraria < 1)
-                throw new ArgumentException("Carga Horária Inválida");
-
-            if (valor < 0)
-                throw new ArgumentException("Valor Inválido");
-
-            
-
-            Nome = nome;
-            CargaHoraria = cargaHoraria;
-            PublicoAlvo = publicoAlvo;
-            Valor = valor;
-            Descricao = descricao;
+            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComPublicoAlvo(PublicoAlvo.Professor).Build())
+                .ComMensagem("Publico Alvo Inválido");
         }
 
-        public string Nome { get; private set; }
-        public int CargaHoraria { get; private set; }
-        public PublicoAlvo PublicoAlvo { get; private set; }
-        public decimal Valor { get; private set; }
-        public string Descricao { get; private set; }
 
     }
 }

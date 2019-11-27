@@ -1,0 +1,78 @@
+﻿@using TreinamentoTDD.Dominio.DTO
+@using TreinamentoTDD.Web.Util
+@model TreinamentoTDD.Web.Util.PaginatedList<CursoDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model[0].nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].cargaHoraria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].publicoAlvo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].valor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cargaHoraria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.publicoAlvo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.valor)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-page="@(Model.PageIndex - 1)"
+   class="btn btn-default @prevDisabled">
+    Anterior
+</a>
+<a asp-action="Index"
+   asp-route-page="@(Model.PageIndex + 1)"
+   class="btn btn-default @nextDisabled">
+    Próximo
+</a>

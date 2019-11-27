@@ -1,18 +1,23 @@
-﻿using TreimanetoTDD.Dominio.Testes.Cursos;
+﻿using Bogus;
+using TreimanetoTDD.Dominio.Testes.Cursos;
+using TreinamentoTDD.Dominio.Cursos;
+using static TreinamentoTDD.Dominio.Enums.Enums;
 
 namespace TreimanetoTDD.Dominio.Testes.Builders
 {
     /// <summary>
-    /// Builder nada mais é do que um construtor do objeto, dessa forma, concentro toda a construção em um unico lugar    /// 
+    /// Builder nada mais é do que um construtor do objeto, dessa forma, concentro toda a construção em um unico lugar 
     /// </summary>
     public class CursoBuilder
     {
         #region Variaveis Internas
-        private  string _nome = "Curso Teste";
-        private  int _cargaHoraria = 40;
-        private  PublicoAlvo _publicoAlvo = PublicoAlvo.Estudante;
-        private  decimal _valor = 4000;
-        private  string _descricao = "Descrição";
+
+        public string _nome = "Curso Teste";
+        public int _cargaHoraria = (int)40;
+        public PublicoAlvo _publicoAlvo = PublicoAlvo.Estudante;
+        public decimal _valor = 2000;
+        public string _descricao = "Descrição Teste";
+
         #endregion
 
         public static CursoBuilder Novo()
@@ -53,13 +58,5 @@ namespace TreimanetoTDD.Dominio.Testes.Builders
             _valor = valor;
             return this;
         }
-
-
-
-
-
-
-
-
     }
 }
