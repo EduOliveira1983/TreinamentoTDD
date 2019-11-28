@@ -1,6 +1,6 @@
 ﻿namespace TreinamentoTDD.Dominio.Util
 {
-    public class MensagensErro
+    public class MensagensValidacao
     {
         #region Curso
         

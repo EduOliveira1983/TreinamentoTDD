@@ -16,17 +16,34 @@ namespace TreinamentoTDD.Dominio.Service
 
         public void Armazenar(CursoDTO cursoDTO)
         {
-            ValidacaoDominio.Validar()
-                .Quando(_cursoRepositorio.ObterPeloNome(cursoDTO.nome) != null, MensagensErro.CursoJaCadastrado)
-                .DispararValidacao();
+            var cursoJaSalvo = _cursoRepositorio.ObterPeloNome(cursoDTO.nome);
             
+            ValidacaoDominio.Validar()
+                .Quando(cursoJaSalvo != null && cursoDTO.Id != cursoJaSalvo.Id , MensagensValidacao.CursoJaCadastrado)
+                .ProcessarValidacao();
+
+
             var curso = new Curso(cursoDTO.nome,
                                   cursoDTO.cargaHoraria,
                                   cursoDTO.publicoAlvo,
                                   cursoDTO.valor,
                                   cursoDTO.descricao);
 
-            _cursoRepositorio.Adicionar(curso);
+            if (cursoDTO.Id > 0)
+            {
+                curso = _cursoRepositorio.ObterPorId(cursoDTO.Id);
+                curso.AlterarNome(cursoDTO.nome);
+                curso.AlterarDescricao(cursoDTO.descricao);
+                curso.AlterarCargaHoraria(cursoDTO.cargaHoraria);
+                curso.AlterarPublicoAlvo(cursoDTO.publicoAlvo);
+                curso.AlterarValor(cursoDTO.valor);
+            }
+            else
+            {
+                _cursoRepositorio.Adicionar(curso);
+            }
+
+
         }
     }
 }

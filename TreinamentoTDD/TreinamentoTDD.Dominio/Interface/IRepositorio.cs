@@ -7,6 +7,6 @@ namespace TreinamentoTDD.Dominio.Interface
     {
         TEntidade ObterPorId(int id);
         List<TEntidade> Consultar();
-        void Adicionar(TEntidade entity);
+        void Adicionar(TEntidade entity);        
     }
 }

@@ -45,7 +45,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         public void NaoDeveCursoTerUmNomeInvalido(string nome)
         {
             Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComNome(nome).Build())
-                .ComMensagem(MensagensErro.NomeInvalido);
+                .ComMensagem(MensagensValidacao.NomeInvalido);
         }
 
         [Theory]
@@ -54,7 +54,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         public void NaoDeveCurtoTerCargaHorariaMenorqueHum(int cargaHoraria)
         {
             Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComCargaHoraria(cargaHoraria).Build())
-                .ComMensagem(MensagensErro.CargaHorariaInvalida);
+                .ComMensagem(MensagensValidacao.CargaHorariaInvalida);
         }
 
         [Theory]
@@ -62,7 +62,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         public void NaoDeveCurtoTerValorMenorQueZero(decimal valor)
         {
             Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComValor(valor).Build())
-                .ComMensagem(MensagensErro.ValorInvalido);
+                .ComMensagem(MensagensValidacao.ValorInvalido);
         }
 
         [Theory]
@@ -71,14 +71,69 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         public void NaoDeveCursoTerDescricaoInvalida(string descricao)
         {
             Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComDescricao(descricao).Build())
-               .ComMensagem(MensagensErro.DescricaoInvalida);
+               .ComMensagem(MensagensValidacao.DescricaoInvalida);
         }
 
         [Fact]
         public void NaoDeveCursoTerPublicoAlvoInvalido()
         {
             Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComPublicoAlvo(PublicoAlvo.Professor).Build())
-                .ComMensagem(MensagensErro.PublicoAlvoInvalido);
+                .ComMensagem(MensagensValidacao.PublicoAlvoInvalido);
         }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        public void NaoDeveAlterarCursoComNomeInvalido(string nomeInvalido)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<DominioException>(() => curso.AlterarNome(nomeInvalido))
+                .ComMensagem(MensagensValidacao.NomeInvalido);
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        public void NaoDeveAlterarCursoComDescricaoInvalida(string descricaoInvalida)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<DominioException>(() => curso.AlterarDescricao(descricaoInvalida))
+                .ComMensagem(MensagensValidacao.DescricaoInvalida);
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-1)]
+        public void NaoDeveAlterarCursoCargaHorariaInvalida(int cargaHorariaInvalida)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<DominioException>(() => curso.AlterarCargaHoraria(cargaHorariaInvalida))
+                .ComMensagem(MensagensValidacao.CargaHorariaInvalida);
+        }
+
+        [Theory]        
+        [InlineData(-1)]
+        public void NaoDeveAlterarCursoValorInvalido(decimal valorInvalido)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<DominioException>(() => curso.AlterarValor(valorInvalido))
+                .ComMensagem(MensagensValidacao.ValorInvalido);
+        }
+
+        [Theory]
+        [InlineData(PublicoAlvo.Professor)]
+        
+        public void NaoDeveAlterarCursoPublicoAlvoInvalido(PublicoAlvo publicoAlvoInvalido)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<DominioException>(() => curso.AlterarPublicoAlvo(publicoAlvoInvalido))
+                .ComMensagem(MensagensValidacao.PublicoAlvoInvalido);
+        }
+
     }
 }

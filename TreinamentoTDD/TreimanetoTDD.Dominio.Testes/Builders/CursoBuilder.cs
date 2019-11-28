@@ -1,4 +1,5 @@
 ﻿using Bogus;
+using System;
 using TreimanetoTDD.Dominio.Testes.Cursos;
 using TreinamentoTDD.Dominio.Cursos;
 using static TreinamentoTDD.Dominio.Enums.Enums;
@@ -12,6 +13,8 @@ namespace TreimanetoTDD.Dominio.Testes.Builders
     {
         #region Variaveis Internas
 
+
+        public int _id;
         public string _nome = "Curso Teste";
         public int _cargaHoraria = (int)40;
         public PublicoAlvo _publicoAlvo = PublicoAlvo.Estudante;
@@ -27,7 +30,15 @@ namespace TreimanetoTDD.Dominio.Testes.Builders
 
         public Curso Build()
         {
-            return new Curso(_nome, _cargaHoraria, _publicoAlvo, _valor, _descricao);
+            var curso = new Curso(_nome, _cargaHoraria, _publicoAlvo, _valor, _descricao);
+
+            if (_id > 0)
+            {
+                var propertyInfo = curso.GetType().GetProperty("Id");
+                propertyInfo.SetValue(curso, Convert.ChangeType(_id, propertyInfo.PropertyType), null);
+            }
+
+            return curso;
         }
 
         public CursoBuilder ComNome(string nome)
@@ -56,6 +67,12 @@ namespace TreimanetoTDD.Dominio.Testes.Builders
         public CursoBuilder ComValor(decimal valor)
         {
             _valor = valor;
+            return this;
+        }
+
+        public CursoBuilder ComId(int id)
+        {
+            _id = id;
             return this;
         }
     }

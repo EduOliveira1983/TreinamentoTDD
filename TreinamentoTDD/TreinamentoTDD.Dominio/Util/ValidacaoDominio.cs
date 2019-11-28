@@ -27,7 +27,7 @@ namespace TreinamentoTDD.Dominio.Util
             return this;
         }
 
-        public void DispararValidacao()
+        public void ProcessarValidacao()
         {
             string retorno = string.Empty;
 
