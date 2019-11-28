@@ -7,8 +7,10 @@ using TreinamentoTDD.Dominio.Cursos;
 using TreinamentoTDD.Dominio.DTO;
 using TreinamentoTDD.Dominio.Interface;
 using TreinamentoTDD.Dominio.Service;
+using TreinamentoTDD.Dominio.Util;
 using Xunit;
 using static TreinamentoTDD.Dominio.Enums.Enums;
+using static TreinamentoTDD.Dominio.Util.ValidacaoDominio;
 
 namespace TreimanetoTDD.Dominio.Testes.Cursos
 {
@@ -29,7 +31,7 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
                 nome = fake.Random.Words(),
                 descricao = fake.Lorem.Paragraph(),
                 cargaHoraria = fake.Random.Int(1, 2000),
-                publicoAlvo = fake.PickRandom<PublicoAlvo>(),
+                publicoAlvo = fake.PickRandomWithout(PublicoAlvo.Professor),
                 valor = fake.Random.Decimal(100, 3000)
             };
         }
@@ -51,8 +53,8 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
             var cursoSalvo = CursoBuilder.Novo().ComNome(cursoDTO.nome).Build();
             cursoRepositorioMock.Setup(r => r.ObterPeloNome(cursoDTO.nome)).Returns(cursoSalvo);
 
-            Assert.Throws<ArgumentException>(() => armazenadorCurso.Armazenar(cursoDTO))
-                .ComMensagem("Curso já armazenado");
+            Assert.Throws<DominioException>(() => armazenadorCurso.Armazenar(cursoDTO))
+                .ComMensagem(MensagensErro.CursoJaCadastrado);
         }
 
         

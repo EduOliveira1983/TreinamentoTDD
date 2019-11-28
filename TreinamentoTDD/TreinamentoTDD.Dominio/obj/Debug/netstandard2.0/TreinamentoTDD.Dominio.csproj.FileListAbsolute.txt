@@ -1,11 +1,3 @@
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.deps.json
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.dll
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.pdb
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.csproj.CoreCompileInputs.cache
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.AssemblyInfoInputs.cache
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.AssemblyInfo.cs
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.dll
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.pdb
 C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.deps.json
 C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.dll
 C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.pdb
@@ -15,3 +7,12 @@ C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Domin
 C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.dll
 C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.pdb
 C:\Users\TTC1776\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.csprojAssemblyReference.cache
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.deps.json
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.dll
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\bin\Debug\netstandard2.0\TreinamentoTDD.Dominio.pdb
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.csprojAssemblyReference.cache
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.AssemblyInfoInputs.cache
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.AssemblyInfo.cs
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.dll
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dominio\obj\Debug\netstandard2.0\TreinamentoTDD.Dominio.pdb

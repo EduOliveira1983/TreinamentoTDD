@@ -1,8 +1,9 @@
-﻿using ExpectedObjects;
-using System;
+﻿using Bogus;
+using ExpectedObjects;
 using TreimanetoTDD.Dominio.Testes._Util;
 using TreimanetoTDD.Dominio.Testes.Builders;
 using TreinamentoTDD.Dominio.Cursos;
+using TreinamentoTDD.Dominio.Util;
 using Xunit;
 using static TreinamentoTDD.Dominio.Enums.Enums;
 
@@ -10,16 +11,22 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
 {
     public class CursoTestes
     {
+        Faker faker;
+
+        public CursoTestes()
+        {
+            faker = new Faker();
+        }
         [Fact]
         public void DeveCriarCurso()
         {
             var cursoEsperado = new
             {
-                Nome = "Curso Teste",
-                CargaHoraria = (int)40,
-                PublicoAlvo = PublicoAlvo.Estudante,
-                Valor = (decimal)4000,
-                Descricao = "Descricao Teste"
+                Nome = faker.Name.ToString(),
+                CargaHoraria = faker.Random.Int(5,100),
+                PublicoAlvo = faker.PickRandomWithout(PublicoAlvo.Professor),
+                Valor = faker.Random.Decimal(10,1000),
+                Descricao = faker.Lorem.Paragraph()
             };
 
             var curso = new Curso(cursoEsperado.Nome,
@@ -37,8 +44,8 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         [InlineData(null)]
         public void NaoDeveCursoTerUmNomeInvalido(string nome)
         {
-            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComNome(nome).Build())
-                .ComMensagem("Nome Inválido");
+            Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComNome(nome).Build())
+                .ComMensagem(MensagensErro.NomeInvalido);
         }
 
         [Theory]
@@ -46,16 +53,16 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         [InlineData(-1)]
         public void NaoDeveCurtoTerCargaHorariaMenorqueHum(int cargaHoraria)
         {
-            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComCargaHoraria(cargaHoraria).Build())
-                .ComMensagem("Carga Horária Inválida");
+            Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComCargaHoraria(cargaHoraria).Build())
+                .ComMensagem(MensagensErro.CargaHorariaInvalida);
         }
 
         [Theory]
         [InlineData(-1)]
         public void NaoDeveCurtoTerValorMenorQueZero(decimal valor)
         {
-            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComValor(valor).Build())
-                .ComMensagem("Valor Inválido");
+            Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComValor(valor).Build())
+                .ComMensagem(MensagensErro.ValorInvalido);
         }
 
         [Theory]
@@ -63,17 +70,15 @@ namespace TreimanetoTDD.Dominio.Testes.Cursos
         [InlineData(null)]
         public void NaoDeveCursoTerDescricaoInvalida(string descricao)
         {
-            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComDescricao(descricao).Build())
-               .ComMensagem("Descrição Inválida");
+            Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComDescricao(descricao).Build())
+               .ComMensagem(MensagensErro.DescricaoInvalida);
         }
 
         [Fact]
         public void NaoDeveCursoTerPublicoAlvoInvalido()
         {
-            Assert.Throws<ArgumentException>(() => CursoBuilder.Novo().ComPublicoAlvo(PublicoAlvo.Professor).Build())
-                .ComMensagem("Publico Alvo Inválido");
+            Assert.Throws<DominioException>(() => CursoBuilder.Novo().ComPublicoAlvo(PublicoAlvo.Professor).Build())
+                .ComMensagem(MensagensErro.PublicoAlvoInvalido);
         }
-
-
     }
 }

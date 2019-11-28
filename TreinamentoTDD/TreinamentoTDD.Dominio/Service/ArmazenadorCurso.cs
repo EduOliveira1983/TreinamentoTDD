@@ -1,7 +1,7 @@
-﻿using System;
-using TreinamentoTDD.Dominio.Cursos;
+﻿using TreinamentoTDD.Dominio.Cursos;
 using TreinamentoTDD.Dominio.DTO;
 using TreinamentoTDD.Dominio.Interface;
+using TreinamentoTDD.Dominio.Util;
 
 namespace TreinamentoTDD.Dominio.Service
 {
@@ -16,9 +16,10 @@ namespace TreinamentoTDD.Dominio.Service
 
         public void Armazenar(CursoDTO cursoDTO)
         {
-            if (_cursoRepositorio.ObterPeloNome(cursoDTO.nome) != null)
-                throw new ArgumentException("Curso já armazenado");
-
+            ValidacaoDominio.Validar()
+                .Quando(_cursoRepositorio.ObterPeloNome(cursoDTO.nome) != null, MensagensErro.CursoJaCadastrado)
+                .DispararValidacao();
+            
             var curso = new Curso(cursoDTO.nome,
                                   cursoDTO.cargaHoraria,
                                   cursoDTO.publicoAlvo,

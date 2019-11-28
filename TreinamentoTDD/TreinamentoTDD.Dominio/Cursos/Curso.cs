@@ -1,5 +1,5 @@
-﻿using System;
-using TreinamentoTDD.Dominio.Base;
+﻿using TreinamentoTDD.Dominio.Base;
+using TreinamentoTDD.Dominio.Util;
 using static TreinamentoTDD.Dominio.Enums.Enums;
 
 namespace TreinamentoTDD.Dominio.Cursos
@@ -8,20 +8,13 @@ namespace TreinamentoTDD.Dominio.Cursos
     {
         public Curso(string nome, int cargaHoraria, PublicoAlvo publicoAlvo, decimal valor, string descricao)
         {
-            if (string.IsNullOrEmpty(nome))
-                throw new ArgumentException("Nome Inválido");
-
-            if (string.IsNullOrEmpty(descricao))
-                throw new ArgumentException("Descrição Inválida");
-
-            if (cargaHoraria < 1)
-                throw new ArgumentException("Carga Horária Inválida");
-
-            if (valor < 0)
-                throw new ArgumentException("Valor Inválido");
-
-            if (publicoAlvo == PublicoAlvo.Professor)
-                throw new ArgumentException("Publico Alvo Inválido");
+            ValidacaoDominio.Validar()
+                .Quando(string.IsNullOrEmpty(nome), MensagensErro.NomeInvalido)
+                .Quando(string.IsNullOrEmpty(descricao), MensagensErro.DescricaoInvalida)
+                .Quando(cargaHoraria < 1, MensagensErro.CargaHorariaInvalida)
+                .Quando(valor < 0, MensagensErro.ValorInvalido)
+                .Quando(publicoAlvo == PublicoAlvo.Professor, MensagensErro.PublicoAlvoInvalido)
+                .DispararValidacao();
 
             Nome = nome;
             CargaHoraria = cargaHoraria;
@@ -34,7 +27,7 @@ namespace TreinamentoTDD.Dominio.Cursos
         public int CargaHoraria { get; private set; }
         public PublicoAlvo PublicoAlvo { get; private set; }
         public decimal Valor { get; private set; }
-        public string Descricao { get; private set; }       
-        
+        public string Descricao { get; private set; }
+
     }
 }
