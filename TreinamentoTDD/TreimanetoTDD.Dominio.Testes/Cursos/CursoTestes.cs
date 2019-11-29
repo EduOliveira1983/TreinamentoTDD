@@ -2,7 +2,7 @@
 using ExpectedObjects;
 using TreimanetoTDD.Dominio.Testes._Util;
 using TreimanetoTDD.Dominio.Testes.Builders;
-using TreinamentoTDD.Dominio.Cursos;
+using TreinamentoTDD.Dominio.Entidades;
 using TreinamentoTDD.Dominio.Util;
 using Xunit;
 using static TreinamentoTDD.Dominio.Enums.Enums;

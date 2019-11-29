@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using TreinamentoTDD.Dominio.Cursos;
+using TreinamentoTDD.Dominio.Entidades;
 
 namespace TreinamentoTDD.Dados.Contextos
 {

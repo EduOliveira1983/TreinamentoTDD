@@ -1,4 +1,4 @@
-﻿using TreinamentoTDD.Dominio.Cursos;
+﻿using TreinamentoTDD.Dominio.Entidades;
 
 namespace TreinamentoTDD.Dominio.Interface
 {

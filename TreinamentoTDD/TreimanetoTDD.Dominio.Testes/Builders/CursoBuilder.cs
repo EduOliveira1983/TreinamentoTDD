@@ -1,7 +1,7 @@
 ﻿using Bogus;
 using System;
 using TreimanetoTDD.Dominio.Testes.Cursos;
-using TreinamentoTDD.Dominio.Cursos;
+using TreinamentoTDD.Dominio.Entidades;
 using static TreinamentoTDD.Dominio.Enums.Enums;
 
 namespace TreimanetoTDD.Dominio.Testes.Builders

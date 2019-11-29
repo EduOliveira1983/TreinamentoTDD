@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TreinamentoTDD.Dados.Contextos;
-using TreinamentoTDD.Dominio.Cursos;
+using TreinamentoTDD.Dominio.Entidades;
 using TreinamentoTDD.Dominio.Interface;
 
 namespace TreinamentoTDD.Dados.Repositorios

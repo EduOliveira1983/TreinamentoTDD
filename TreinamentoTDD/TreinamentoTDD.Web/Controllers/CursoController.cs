@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TreinamentoTDD.Dominio.Cursos;
+using TreinamentoTDD.Dominio.Entidades;
 using TreinamentoTDD.Dominio.DTO;
 using TreinamentoTDD.Dominio.Interface;
 using TreinamentoTDD.Dominio.Service;
@@ -54,5 +54,32 @@ namespace TreinamentoTDD.Web.Controllers
             _armazenadorCurso.Armazenar(model);
             return Index();
         }
+
+        public IActionResult Edit(int id)
+        {
+            var curso = _cursoRepositorio.ObterPorId(id);
+
+            var CursoEncontrado = new CursoDTO
+            {
+                cargaHoraria = curso.CargaHoraria,
+                descricao = curso.Descricao,
+                Id = curso.Id,
+                nome = curso.Nome,
+                publicoAlvo = curso.PublicoAlvo,
+                valor = curso.Valor
+            };
+
+            return View("Edit", CursoEncontrado);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(CursoDTO model)
+        {
+            _armazenadorCurso.Armazenar(model);
+            return Index();
+        }
+
+
+
     }
 }

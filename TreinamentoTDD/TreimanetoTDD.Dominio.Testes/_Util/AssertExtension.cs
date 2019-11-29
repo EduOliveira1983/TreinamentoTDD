@@ -1,7 +1,5 @@
-﻿using System;
-using TreinamentoTDD.Dominio.Util;
+﻿using TreinamentoTDD.Dominio.Util;
 using Xunit;
-using static TreinamentoTDD.Dominio.Util.ValidacaoDominio;
 
 namespace TreimanetoTDD.Dominio.Testes._Util
 {

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Cpf/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Cpf.dll": {}
+        },
+        "runtime": {
+          "lib/Cpf.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4636,6 +4645,9 @@
       "TreinamentoTDD.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "TreinamentoTDD.Util": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TreinamentoTDD.Dominio.dll": {}
         },
@@ -4659,10 +4671,37 @@
         "runtime": {
           "bin/placeholder/TreinamentoTDD.IoC.dll": {}
         }
+      },
+      "TreinamentoTDD.Util/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Cpf": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/TreinamentoTDD.Util.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TreinamentoTDD.Util.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Cpf/2.1.0": {
+      "sha512": "pj7tW8tNCEYXHqBKbDXR0MPwIeB3TrF0PWX7p2o9RRugNMeP7ZzcX0LO9BmuWNS5sSjN5dK6NJDiL8wnRAZ5Iw==",
+      "type": "package",
+      "path": "cpf/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cpf.2.1.0.nupkg.sha512",
+        "cpf.nuspec",
+        "lib/Cpf.dll",
+        "lib/Cpf.pdb",
+        "lib/Cpf.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -12577,6 +12616,11 @@
       "type": "project",
       "path": "../TreinamentoTDD.IoC/TreinamentoTDD.IoC.csproj",
       "msbuildProject": "../TreinamentoTDD.IoC/TreinamentoTDD.IoC.csproj"
+    },
+    "TreinamentoTDD.Util/1.0.0": {
+      "type": "project",
+      "path": "../TreinamentoTDD.Util/TreinamentoTDD.Util.csproj",
+      "msbuildProject": "../TreinamentoTDD.Util/TreinamentoTDD.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12590,23 +12634,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TTC1776\\.nuget\\packages\\": {},
+    "C:\\Users\\eduar\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Web\\TreinamentoTDD.Web.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Web\\TreinamentoTDD.Web.csproj",
       "projectName": "TreinamentoTDD.Web",
-      "projectPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Web\\TreinamentoTDD.Web.csproj",
-      "packagesPath": "C:\\Users\\TTC1776\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Web\\obj\\",
+      "projectPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Web\\TreinamentoTDD.Web.csproj",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\TTC1776\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12619,11 +12663,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj": {
-              "projectPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj"
+            "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj": {
+              "projectPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.Dominio\\TreinamentoTDD.Dominio.csproj"
             },
-            "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj": {
-              "projectPath": "C:\\Users\\TTC1776\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj"
+            "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj": {
+              "projectPath": "C:\\Users\\eduar\\source\\repos\\TreinamentoTDD\\TreinamentoTDD\\TreinamentoTDD.IoC\\TreinamentoTDD.IoC.csproj"
             }
           }
         }
@@ -12649,6 +12693,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12659,11 +12704,29 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Cpf 2.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Cpf",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

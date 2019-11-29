@@ -1,4 +1,4 @@
-﻿using TreinamentoTDD.Dominio.Cursos;
+﻿using TreinamentoTDD.Dominio.Entidades;
 using TreinamentoTDD.Dominio.DTO;
 using TreinamentoTDD.Dominio.Interface;
 using TreinamentoTDD.Dominio.Util;

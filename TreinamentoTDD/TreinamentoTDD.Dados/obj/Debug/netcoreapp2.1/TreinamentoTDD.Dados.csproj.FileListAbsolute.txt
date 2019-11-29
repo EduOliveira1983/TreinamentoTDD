@@ -16,9 +16,10 @@ C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\b
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.dll
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\bin\Debug\netcoreapp2.1\TreinamentoTDD.Dominio.pdb
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.csprojAssemblyReference.cache
-C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.csproj.CoreCompileInputs.cache
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.AssemblyInfoInputs.cache
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.AssemblyInfo.cs
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.csproj.CopyComplete
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.dll
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\obj\Debug\netcoreapp2.1\TreinamentoTDD.Dados.pdb
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\bin\Debug\netcoreapp2.1\TreinamentoTDD.Util.dll
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Dados\bin\Debug\netcoreapp2.1\TreinamentoTDD.Util.pdb

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "da69ac8907ce0910e3ed8445f259867631b98951"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -16,6 +16,14 @@
         },
         "runtime": {
           "TreinamentoTDD.IoC.dll": {}
+        }
+      },
+      "Cpf/2.1.0": {
+        "runtime": {
+          "lib/Cpf.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore/2.1.1": {
@@ -252,16 +260,6 @@
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "Newtonsoft.Json/11.0.2": {
@@ -512,26 +510,9 @@
       "System.Security.AccessControl/4.5.0": {
         "dependencies": {
           "System.Security.Principal.Windows": "4.5.0"
-        },
-        "runtimeTargets": {
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
-      "System.Security.Principal.Windows/4.5.0": {
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
+      "System.Security.Principal.Windows/4.5.0": {},
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -580,8 +561,19 @@
         }
       },
       "TreinamentoTDD.Dominio/1.0.0": {
+        "dependencies": {
+          "TreinamentoTDD.Util": "1.0.0"
+        },
         "runtime": {
           "TreinamentoTDD.Dominio.dll": {}
+        }
+      },
+      "TreinamentoTDD.Util/1.0.0": {
+        "dependencies": {
+          "Cpf": "2.1.0"
+        },
+        "runtime": {
+          "TreinamentoTDD.Util.dll": {}
         }
       }
     }
@@ -591,6 +583,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Cpf/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pj7tW8tNCEYXHqBKbDXR0MPwIeB3TrF0PWX7p2o9RRugNMeP7ZzcX0LO9BmuWNS5sSjN5dK6NJDiL8wnRAZ5Iw==",
+      "path": "cpf/2.1.0",
+      "hashPath": "cpf.2.1.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.1.1": {
       "type": "package",
@@ -1011,6 +1010,11 @@
       "sha512": ""
     },
     "TreinamentoTDD.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TreinamentoTDD.Util/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
