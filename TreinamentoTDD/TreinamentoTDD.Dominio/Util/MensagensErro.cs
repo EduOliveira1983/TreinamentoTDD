@@ -10,7 +10,7 @@
         public static readonly string FormatoEmailInvalido = "Formato do Email Inválido";
 
         public static readonly string CPFInvalido = "CPF inválido";
-        
+        public static readonly string CPFJaCdastrado = "CPF já cadastrado";
         public const string ValorInvalido = "Valor inválido";
         
         public const string PublicoAlvoInvalido = "Publico Alvo inválido";

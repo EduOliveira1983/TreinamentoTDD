@@ -5,3 +5,4 @@ C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Util\ob
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Util\obj\Debug\netstandard2.0\TreinamentoTDD.Util.AssemblyInfo.cs
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Util\obj\Debug\netstandard2.0\TreinamentoTDD.Util.dll
 C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Util\obj\Debug\netstandard2.0\TreinamentoTDD.Util.pdb
+C:\Users\eduar\source\repos\TreinamentoTDD\TreinamentoTDD\TreinamentoTDD.Util\obj\Debug\netstandard2.0\TreinamentoTDD.Util.csprojAssemblyReference.cache
